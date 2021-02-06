@@ -25,11 +25,11 @@ export class CoffeesController {
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateCoffeeDto: UpdateCoffeeDto) {
-    this.coffeesService.update(id, updateCoffeeDto);
+    return this.coffeesService.update(id, updateCoffeeDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    this.coffeesService.remove(id);
+    return this.coffeesService.remove(id);
   }
 }
