@@ -38,10 +38,6 @@ export class CoffeesService {
       createCoffeeDto.flavors.map((name) => this.preloadFlavorByName(name)),
     );
 
-    console.log(3);
-
-    console.log(flavors);
-
     const coffee = this.coffeeRepository.create({
       ...createCoffeeDto,
       flavors,
