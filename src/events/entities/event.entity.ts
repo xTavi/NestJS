@@ -1,0 +1,16 @@
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+
+@Entity()
+export class Event {
+  @PrimaryGeneratedColumn()
+  id: number;
+
+  @Column()
+  type: string;
+
+  @Column()
+  name: string;
+
+  @Column()
+  payload: Record<string, any>;
+}
