@@ -11,7 +11,7 @@ import { CoffeesModule } from './coffees/coffees.module';
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
-      port: 5432, // from docker-compose file
+      port: 5431, // from docker-compose file
       username: 'postgres', // this is the default
       password: 'pass123', // from docker
       database: 'postgres',
